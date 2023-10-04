@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "variables.css";
 @import "navbar.css";
+@import "hero.css";
 * {
   box-sizing: border-box;
 }

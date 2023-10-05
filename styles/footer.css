@@ -4,8 +4,29 @@
   text-align: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 4rem 0;
+  padding: 4rem 0 1rem 0;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-circle {
+  width: 180%;
+  height: 180%;
+  bottom: -290px;
+  z-index: -1;
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 50% 50% 0 0;
+}
+
+.footer-img {
+  position: absolute;
+  width: 130px;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg) translate(20%, -20px);
 }
 
 .list {
@@ -22,4 +43,5 @@
 
 .copyright {
   font-family: "Montserrat";
+  padding-top: 1rem;
 }

@@ -22,11 +22,13 @@
 
 .footer-img {
   position: absolute;
-  width: 130px;
+  width: 25%;
+  max-width: 200px;
   height: auto;
   left: 0;
-  bottom: 0;
+  bottom: 0%;
   transform: rotate(180deg) translate(20%, -20px);
+  z-index: -1;
 }
 
 .list {
@@ -44,4 +46,11 @@
 .copyright {
   font-family: "Montserrat";
   padding-top: 1rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .footer-img {
+    bottom: -5%;
+  }
 }

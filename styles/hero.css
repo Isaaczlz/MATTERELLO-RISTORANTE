@@ -57,7 +57,7 @@
   color: var(--black-color);
   background-color: var(--primary-color);
   /* border: 2px solid var(--black-color); */
-  scale: 1.1;
+  /* scale: 1.1; */
   box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,7 +68,9 @@
 }
 
 .left-floating {
-  width: 170px;
+  width: 25%;
+  max-width: 170px;
+  height: auto;
   position: absolute;
   bottom: 8%;
   left: 0;
@@ -77,10 +79,23 @@
 }
 
 .right-floating {
-  width: 150px;
+  width: 25%;
+  max-width: 150px;
+  height: auto;
   position: absolute;
   bottom: 8%;
   right: 0;
   z-index: -1;
   transform: rotate(-25deg) translate(0, 50%);
+}
+
+@media (min-width: 768px) {
+  .left-floating {
+    max-width: 250px;
+    bottom: 18%;
+  }
+  .right-floating {
+    max-width: 230px;
+    bottom: 18%;
+  }
 }

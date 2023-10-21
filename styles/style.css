@@ -4,7 +4,12 @@
 @import "hero.css";
 @import "features.css";
 @import "footer.css";
+@import "modal_menu.css";
+@import "modal_error.css";
 
 * {
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
 }
